@@ -1,0 +1,28 @@
+* Testbench for Half Adder
+
+.include halfadder_iman_scmos.spice
+
+* MOSFET Models
+.model nfet NMOS (LEVEL=1 VTO=0.7 KP=50u LAMBDA=0.02)
+.model pfet PMOS (LEVEL=1 VTO=-0.7 KP=20u LAMBDA=0.02)
+
+* Power
+Vdd vdd 0 5
+
+* Inputs
+Va a 0 PULSE(0 5 0 1n 1n 20n 40n)
+Vb b 0 PULSE(0 5 0 1n 1n 40n 80n)
+
+* Analysis
+.tran 1n 200n
+
+.control
+run
+plot v(a) v(b) v(sum) v(carry)
+plot v(a)
+plot v(b)
+plot v(sum)
+plot v(carry)
+.endc
+
+.end
