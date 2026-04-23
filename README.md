@@ -16,11 +16,5 @@ This project presents the transistor-level CMOS layout of a Half Adder designed 
 - Performed Design Rule Check (DRC) to ensure layout correctness
 - Layout follows basic design constraints and rules
 
-## Files Included
-- `layout.mag` – Magic layout file
-
-## Preview
-(Add layout screenshots here)
-
 ## Author
 Iman Fatima
