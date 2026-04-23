@@ -1,0 +1,58 @@
+* SPICE3 file created from halfadder_iman_scmos.ext - technology: scmos
+
+.option scale=1u
+* Simple MOSFET Models for SCMOS
+.model nfet NMOS (LEVEL=1 VTO=0.7 KP=50u LAMBDA=0.02)
+.model pfet PMOS (LEVEL=1 VTO=-0.7 KP=20u LAMBDA=0.02)
+M1000 vdd a_112_n39# gnd Vdd pfet w=8 l=2
++  ad=40p pd=26u as=24p ps=14u
+M1001 X A a_58_n37# Gnd nfet w=4 l=2
++  ad=20p pd=18u as=8p ps=8u
+M1002 gnd A a_134_n37# Gnd nfet w=4 l=2
++  ad=20p pd=18u as=6p ps=7u
+M1003 X a_34_n9# vdd Vdd pfet w=8 l=2
++  ad=24p pd=14u as=40p ps=26u
+M1004 a_82_n37# X gnd Gnd nfet w=4 l=2
++  ad=8p pd=8u as=20p ps=18u
+M1005 a_134_n37# B a_112_n39# Gnd nfet w=4 l=2
++  ad=6p pd=7u as=20p ps=18u
+M1006 vdd B a_34_n9# Vdd pfet w=8 l=2
++  ad=40p pd=26u as=24p ps=14u
+M1007 a_n6_n37# A gnd Gnd nfet w=4 l=2
++  ad=6p pd=7u as=20p ps=18u
+M1008 vdd A a_112_n39# Vdd pfet w=8 l=2
++  ad=40p pd=26u as=24p ps=14u
+M1009 sum gnd a_82_n37# Gnd nfet w=4 l=2
++  ad=20p pd=18u as=8p ps=8u
+M1010 a_n6_n9# B a_n6_n37# Gnd nfet w=4 l=2
++  ad=20p pd=18u as=6p ps=7u
+M1011 a_66_n9# A X Vdd pfet w=8 l=2
++  ad=40p pd=26u as=24p ps=14u
+M1012 carry a_n6_n9# vdd Vdd pfet w=8 l=2
++  ad=40p pd=26u as=40p ps=26u
+M1013 carry a_n6_n9# a_8_n37# Gnd nfet w=4 l=2
++  ad=20p pd=18u as=20p ps=18u
+M1014 a_90_n9# gnd sum Vdd pfet w=8 l=2
++  ad=40p pd=26u as=24p ps=14u
+M1015 a_114_n37# a_112_n39# a_109_n37# Gnd nfet w=4 l=2
++  ad=24p pd=20u as=6p ps=7u
+M1016 a_n6_n9# A vdd Vdd pfet w=8 l=2
++  ad=24p pd=14u as=40p ps=26u
+M1017 a_34_n9# B a_34_n37# Gnd nfet w=4 l=2
++  ad=20p pd=18u as=6p ps=7u
+M1018 gnd B a_99_n9# Vdd pfet w=8 l=2
++  ad=24p pd=14u as=40p ps=26u
+M1019 a_34_n37# A gnd Gnd nfet w=4 l=2
++  ad=6p pd=7u as=20p ps=18u
+M1020 a_109_n37# B gnd Gnd nfet w=4 l=2
++  ad=6p pd=7u as=20p ps=18u
+M1021 vdd B a_n6_n9# Vdd pfet w=8 l=2
++  ad=40p pd=26u as=24p ps=14u
+M1022 sum X vdd Vdd pfet w=8 l=2
++  ad=24p pd=14u as=40p ps=26u
+M1023 a_34_n9# A vdd Vdd pfet w=8 l=2
++  ad=24p pd=14u as=40p ps=26u
+M1024 a_112_n39# B a_123_n9# Vdd pfet w=8 l=2
++  ad=24p pd=14u as=40p ps=26u
+M1025 a_58_n37# a_34_n9# gnd Gnd nfet w=4 l=2
++  ad=8p pd=8u as=20p ps=18u
